@@ -1,6 +1,6 @@
 const COLLECTION_ID = "5f1d6d37c58dc34bf5dafba4";
 const API_URL = "https://api.jsonbin.io/v3/b"; // todo: use API v2
-import("./secret.js").then(m => window.API_KEY = m.API_KEY);
+window.API_KEY = localStorage.getItem("API_KEY");
 
 // todo later: move common functionality from all CRUD functions to a single function
 
