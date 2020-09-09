@@ -1,4 +1,4 @@
-const COLLECTION_ID = "5f1d6d37c58dc34bf5dafba4";
+const COLLECTION_ID = "5f58af75ad23b57ef90ecf4d";
 const API_URL = "https://api.jsonbin.io/v3/b"; // todo: use API v2
 window.API_KEY = localStorage.getItem("API_KEY");
 
