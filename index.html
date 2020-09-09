@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script src="./main.js"></script>
+    <script src="./ajax.js"></script>
+    <script src="./network.js"></script>
+    <script src="./secret.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- todo later: use a local copy installed via npm -->
+</head>
+<body>
+    <h1>Crud</h1>
+    <div id="control">
+        <button onclick="newBin()">New</button>
+        <button onclick="loadBin()">Load</button>
+        <button onclick="saveBin()">Save</button> <!-- fix: disable button when cant save -->
+        <button onclick="deleteBin()">Delete</button> <!-- fix: disable button when cant delete -->
+    </div>
+    <div id="view">
+        <!-- todo later: make editable only when bin is loaded -->
+        <textarea name="json data" id="json-data" placeholder="json string" rows="10" cols="100"></textarea>
+    </div>
+    <div id="metadata"></div> <!-- todo later: make proper elements -->
+    <div id="error" style="color: red;"></div> <!-- todo later: move style to a dedicated css sheet -->
+</body>
+</html>
